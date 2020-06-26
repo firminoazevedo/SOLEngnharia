@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:solbd/Services.dart';
+import 'package:solbd/UI/home_screen.dart';
 import 'package:solbd/UI/login.dart';
 import 'package:solbd/models/instalacoes.dart';
 //import 'package:http/http.dart' as http;
@@ -34,7 +35,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: _darkTheme,
-      home: LoginPage() 
+      home: Home()
     );
   }
 }

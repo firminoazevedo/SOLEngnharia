@@ -77,7 +77,7 @@ class CardInstalacoes extends StatelessWidget {
                             Spacer(),
                             IconButton(
                               onPressed: () { 
-                                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                                Navigator.push(context, MaterialPageRoute(
                                   builder: (context) => InstalacoesScreen(),
                                 ));
                                },

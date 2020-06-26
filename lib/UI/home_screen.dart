@@ -1,5 +1,6 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:solbd/UI/clientes_screen.dart';
 import 'package:solbd/UI/orcamento_screen.dart';
 import 'package:solbd/components/cardInstalacoes.dart';
 
@@ -92,9 +93,12 @@ class _HomeState extends State<Home> {
               onDismissed: (direction) {
               },
             ),
+            ClientesScreen(),
             Orcamento(),
           ],
         ),
+
+        // Bottom Navigation
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: _indexPage,
             onTap: (page) {
