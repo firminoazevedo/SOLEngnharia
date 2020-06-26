@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:solbd/Animation/FadeAnimation.dart';
+import 'package:solbd/UI/instalacoesScreen.dart';
 
 class CardInstalacoes extends StatelessWidget {
   @override
@@ -76,7 +77,9 @@ class CardInstalacoes extends StatelessWidget {
                             Spacer(),
                             IconButton(
                               onPressed: () { 
-                                print('Fui apertado');
+                                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                                  builder: (context) => InstalacoesScreen(),
+                                ));
                                },
                               icon: Icon(
                                 Icons.arrow_forward,
