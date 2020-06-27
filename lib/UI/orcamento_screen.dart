@@ -7,6 +7,7 @@ class Orcamento extends StatefulWidget {
 }
 
 class _OrcamentoState extends State<Orcamento> {
+    String orcamento;
     var consumoMensal = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
     double valorKit  = 0;
     double engenheiro  = 0;
@@ -213,15 +214,24 @@ class _OrcamentoState extends State<Orcamento> {
           ),
 
           SizedBox(height: 15,),
+            Divider(),
+            orcamento !=null ? Text(orcamento, style: TextStyle(
+              fontSize: 30
+            ),
+            ) : Container(),
+
+          SizedBox(height: 15,),
           FlatButton(
             color: Colors.amber,
             splashColor: Colors.deepOrange,
             onPressed: (){
               print('Valor dos campos de mes: ${_fazerOrcamento()}');
               print(valorKit + engenheiro + art + adaptacao + extras + tecnico+ transporte); 
+              setState(() {
+                orcamento = 'R\$ 85.000';
+              });
             },
             child: Text('ORÇAMENTAR')),
-
         ],
       ),
       ),

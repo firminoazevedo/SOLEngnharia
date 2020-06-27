@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: _darkTheme,
-      home: Home()
+      home: LoginPage()
     );
   }
 }
