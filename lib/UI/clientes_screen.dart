@@ -81,8 +81,6 @@ class _ClientesScreenState extends State<ClientesScreen> {
           ),),
           subtitle: Text('Supermercado Santos'),
         ),
-
-
       ],
       ),
     );
